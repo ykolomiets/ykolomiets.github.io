@@ -1,0 +1,43 @@
+@layer reset, theme, global, layout;
+
+@font-face {
+  font-family: "Courier Prime";
+  font-style: normal;
+  font-display: swap;
+  src: url("fonts/courier-prime-regular.woff2") format("woff2");
+}
+
+@layer reset {
+  *,
+  ::before,
+  ::after {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: unset;
+  }
+}
+
+@layer theme {
+  :root {
+    --font-main: "Courier Prime", monospace;
+  }
+}
+
+@layer global {
+  body {
+    font-family: var(--font-main);
+  }
+  
+  a {
+    color: unset;
+    text-decoration: none;
+  }
+}
+
+@layer layout {
+  nav {
+    display: none;
+  }
+}

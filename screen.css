@@ -1,0 +1,61 @@
+@layer reset, theme, global, layout;
+
+@font-face {
+  font-family: "Courier Prime";
+  font-style: normal;
+  font-display: swap;
+  src: url("fonts/courier-prime-regular.woff2") format("woff2");
+}
+
+@layer reset {
+  *,
+  ::before,
+  ::after {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: unset;
+  }
+}
+
+@layer theme {
+  :root {
+    --font-main: "Courier Prime", monospace;
+  }
+}
+
+@layer global {
+  body {
+    font-family: var(--font-main);
+  }
+
+  h1, h2, h3, h4 {
+    margin-block: 1em;
+  }
+}
+
+@layer layout {
+  body {
+    padding: 1em;
+    max-inline-size: 80ch;
+    margin: auto;
+  }
+
+  section {
+    margin-block-start: 3em;
+  }
+
+  section h2 {
+    border-block-end: 1px solid;
+  }
+
+  article + article {
+    margin-block-start: 3em;
+  }
+
+  #experience article div + div{
+    margin-block-start: 2em;
+  }
+}
+
