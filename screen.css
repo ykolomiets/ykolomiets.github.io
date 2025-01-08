@@ -33,6 +33,26 @@
   h1, h2, h3, h4 {
     margin-block: 1em;
   }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 1.25em;
+  }
+
+  h4 {
+    font-size: 1.1em;
+  }
+
+  address {
+    font-style: normal;
+  }
 }
 
 @layer layout {
@@ -58,4 +78,3 @@
     margin-block-start: 2em;
   }
 }
-
