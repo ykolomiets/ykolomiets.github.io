@@ -10,7 +10,7 @@
   </head>
   <body>
     <header>
-      <h1>Yaroslav Kolomiiets:<br><small>Software Engineer, Fullstack Web Developer</small></h1>
+      <h1>Yaroslav Kolomiiets:<br><small>Full Stack Engineer, 8 years of experience</small></h1>
       <nav>
         <ul>
           <li><a href="#contact">Contact information</a></li>
@@ -35,9 +35,9 @@
       <section id="about-me" aria-labelledby="about-me-heading">
         <h2 id="about-me-heading">About me</h2>
         <p>
-          I have 8 years of experience in Web technologies.<br>
-          Adept of maintainable and simple software in search of challenging problems.<br>
-          Being web accessibility advocate I assign user experience a top priority.<br>
+          Adept of maintainable and simple (but not simpler than necessary) solutions for challenging problems.<br>
+          I'm actively seeking a project that aims to make a positive impact on the world,
+          whether in a big or small way.
         </p>
       </section>
       <section id="tech-and-skills" aria-labelledby="tech-and-skills-heading">
@@ -45,25 +45,27 @@
         <h3>Worked closely with:</h3>
         <ul>
           <li>Node.js</li>
-          <li>Javascipt/Typescript</li>
+          <li>JavaScipt, TypeScript</li>
           <li>HTML, CSS, React</li>
           <li>MySQL, PostgreSQL, SQLite</li>
-          <li>docker, docker-compose</li>
-          <li>Google Cloud Platform, Cloudflare</li>
+          <li>Docker, docker-compose</li>
+          <li>Google Cloud Platform, Cloudflare Workers</li>
         </ul>
         <h3>Used at work:</h3>
         <ul>
           <li>C# (Unity), Objective-C</li>
-          <li>k8s</li>
+          <li>Kubernetes</li>
           <li>Terraform</li>
           <li>Teamcity</li>
           <li>MongoDB</li>
+          <li>bash, Make</li>
         </ul>
         <h3>Tinkering with:</h3>
         <ul>
           <li>C</li>
           <li>Lua</li>
           <li>Python</li>
+          <li>AWS</li>
         </ul>
       </section>
       <section id="experience" aria-labelledby="experience-heading">
@@ -71,102 +73,87 @@
         <article>
           <h3><a href="https://intergiro.com">Intergiro</a>, Warsaw, Poland</h3>
           <p>
-            Key technologies: Node.js, Javascript/Typescript, Express, MySQL, PostgreSQL, SQLite,
-            Docker, docker-compose, k8s, Terraform, Teamcity, Google Cloud Platform, Cloudflare Workers,
-            Metabase
+            Key technologies: Node.js, React, Javascript/Typescript, Express, NestJS, MySQL, PostgreSQL, SQLite,
+            Docker, Kubernetes, Terraform, Teamcity, Google Cloud Platform, Cloudflare Workers
           </p>
           <p>
-            During my 3-year tenure at Intergiro, I progressed from a Middle Software Engineer to a Team Lead,
+            During my 3-year tenure at Intergiro, I progressed from a individual contributor to a team leader,
             working across the entire product development life cycle. I collaborated closely with
-            cross-functional teams—product, QA, operations—to design, develop, test, and deploy
-            critical features. Throughout these roles, I consistently drove technical improvements,
-            fostered team growth through mentoring, and maintained a strong focus on delivering business value.
+            cross-functional teams to design, develop, test, and deploy critical features; consistently drove
+            technical improvements, fostered team growth through mentoring, and maintained a strong focus on 
+            delivering business value.
           </p>
           <div>
-            <h4>Dev Team Lead in Acquiring Team</h4>
+            <h4>Lead Software Engineer, PSP and Merchant Acquirer Team</h4>
             <p class="period">April 2023 - June 2024</p>
             <ul>
               <li>
                 I was deployed to resolve urgent issues in the Acquiring Team's revenue-critical product.
               </li>
               <li>
-                Quickly absorbed acquiring-specific knowledge and dissected an externally developed
-                codebase with a distinct tech stack and practices.
+                Led a team of 5 to stabilize a newly acquired product, enabling the company to scale its transactional
+                throughput by 10x; the product became the primary revenue generator, contributing 80% of total revenue
               </li>
               <li>
-                Planned and executed system stabilization. Led migration existing data from KV storage to
-                SQL database for better consistency and reliability. Enhanced system health monitoring
-                by improving logging and troubleshooting processes.
+                Eliminated data loss and significantly boosted query performance by migrating (without any downtime) both
+                historical and ongoing data from Cloudflare Workers KV storage and Durable Objects to PostgreSQL
               </li>
               <li>
-                Initiated, planned and led a complete rewrite of the project (a rare case when rewrite was
-                completely justified) into the company's common tech stack shifting to asynchronous processing
-                model where possible. Collaborated closely with domain experts and operational team to capture
-                current business rules rather than relying on legacy assumptions. Ensured a seamless transition,
-                preventing data loss and enabling the operations team to continue fulfilling client obligations
-                without disruption.
+                Migrated critical project components - including settlement and reconciliation of transactions, payouts, and
+                balance calculation - to the company’s technological stack, enhancing system performance, reliability, and
+                observability while enabling faster development of new features
               </li>
               <li>
-                Shared best practices with the existing team, fostering a culture of continuous improvement.
+                Shared best practices with my team, fostering a culture of continuous improvement.
                 Onboarded a new team member, guiding them in both technical and domain-specific aspects
                 of the project.
               </li>
             </ul>
           </div>
           <div>
-            <h4>Senior Software Engineer in Onboarding Team</h4>
+            <h4>Senior Software Engineer, Onboarding and Internal Tools Team</h4>
             <p class="period">September 2021 - March 2023</p>
             <ul>
               <li>
-                Designed and developed the core part of an automated onboarding solution,
-                enabling easy addition of new steps as required, which significantly reduced
-                the manual workload for the onboarding team and streamlined the process.
+                Designed and documented a PSD2-compliant solution for SCA and dynamic linking, and coordinated its
+                implementation across 4 teams to ensure seamless integration spanning multiple microservices and frontends
               </li>
               <li>
-                Designed a solution for SCA and dynamic linking compliant with
-                the PSD2 directive, and coordinated its implementation across
-                multiple teams to ensure seamless integration and adherence
-                to regulatory requirements.
+                Developed the core of automated corporate and individual KYC flows, leading to a 44% reduction in customer
+                onboarding costs and enabling the straightforward expansion of these flows in the future
               </li>
               <li>
-                Participated in deployment to production, monitoring system's health.
+                Led a team of 4 in developing a new B2B onboarding portal (web application facing both customers and
+                onboarding staff), meeting a critical deadline and increasing the conversion rate by 30%
               </li>
               <li>
-                Participated in technical interviews, contributing to hiring decisions
-                and talent acquisition.
+                Wrote integrations with 10+ different 3rd party services, including Twilio, Onfido, Hubspot, and others
               </li>
               <li>
-                Briefly served as Tech Team Lead for a new team, mentoring a newcoming developer
-                and guiding key technical decisions. Promoted pair programming and provided
-                hands-on support to teammates, fostering a collaborative environment.
+                Developed multiple packages and developer tools improving developer experience and minimizing manual activities
               </li>
               <li>
-                Collaborated with QA to improve end-to-end test implementations,
-                ensuring smoother and more reliable releases.
+                Optimized the asynchronous communication layer between services, enhancing reliability and scalability across the organization.
               </li>
               <li>
-                Optimized the asynchronous communication layer between services,
-                enhancing reliability and scalability across the organization.
+                Collaborated with QA to improve end-to-end test implementations, ensuring smoother and more reliable releases.
+              </li>
+              <li>
+                Interviewed, onboarded, and mentored developers, fostering their independence and supporting their growth
+                within the team through pair programming and knowledge-sharing sessions
               </li>
             </ul>
           </div>
           <div>
-            <h4>Middle Software Engineer in Onboarding Team</h4>
-            <p class="period">April 2021 - August 2022</p>
+            <h4>Software Engineer, Onboarding Team</h4>
+            <p class="period">April 2021 - August 2021</p>
             <ul>
               <li>
-                Immersed myself in the Onboarding Team domain,
-                actively participating in planning and grooming sessions.
+                Standardized API error responses across all endpoints and developed a testing utility to simplify writing
+                integration tests for API endpoints using the Chai plugin
               </li>
               <li>
-                Ensured a consistent error format across all API routes of our service
-                by implementing standardized testing utilities, simplifying future integration tests.
-              </li>
-              <li>
-                Contributed to the integration with third-party identity verification services
-                by thoroughly researching their documentation, sharing insights with teammates,
-                assisting in implementation, and creating testing guides that enabled developers
-                to test integration locally
+                Refactored a React application, enabling it to be efficiently split into smaller bundles
               </li>
             </ul>
           </div>
@@ -180,8 +167,11 @@
             <p class="period">February 2017 - December 2020</p>
             <ul>
               <li>
-                Led development of
-                <a href="https://battleofgeniuses.com">a cross-platform mobile multiplayer game</a>,
+                Led development of a cross-platform
+                (<a href="https://apps.apple.com/us/app/battle-of-geniuses-quiz-game/id1137352495">iOS</a>
+                and
+                <a href="https://play.google.com/store/apps/details?id=com.artadian.begenius">Android</a>)
+                mobile multiplayer game,
               growing the player base from 0 to over 500,000 players within three years.
               </li>
               <li>
@@ -228,7 +218,11 @@
         </article>
       </section>
       <section aria-labelledby="education">
-        <h2 id="education">Education</h2>
+        <h2 id="education">Education and certification</h2>
+        <article>
+          <h3>AWS Certified Solutions Architect - Associate</h3>
+          <p class="period">February 2025</p>
+        </article>
         <article>
           <h3>Bachelor's Degree: Software Engineering</h3>
           <p class="period">September 2015 - May 2019</p>
